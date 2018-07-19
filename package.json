@@ -1,7 +1,6 @@
 {
   "name": "guest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "browserify": "^16.2.2",
@@ -12,8 +11,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+        "build-js":"browserfy js/hello.js>build/js/script.min.js",
+        "build-css":  "node-sass - include-path scss/main.scss build/css/style.min.css",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "cd build && http-server"
+
   },
-  "author": "",
-  "license": "ISC"
+  "author": "gerard",
+  "license": "ISC",
+  "description": "website"
 }
