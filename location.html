@@ -20,25 +20,50 @@
 <ul> <p>Facilities</p>
 <p> location </p>
 <div class="threecolumnlayout">
-<div>
-</diV>
-</diV>
-  <div class="wrapper">
-  <div class="one">One</div>
-  <div class="two">Two</div>
-  <div class="three">Three</div>
 
+</div>
+  <div class="wrapper">
+  <div class="one">Single bed room
+  <img src="/media/examples/frog.png">
+</div>
+  <div class="two">Double room
+  <img src="/media/examples/frog.png">
+  </div>
+  <div class="three">twin bed room
+  <img src="/media/examples/frog.png">
 </div>
       <p></p>
 </ul>
 <div>
 </div>
-<P> we are located in the centre of cork city a ten minute waLK  </p>
+<P> we are located in the centre of cork city a ten minute walk </p>
 
 
 
   </div>
  <div class="box sidebar2">contact details</div>
+ /* Large */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+ /* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
    <div class="box footer">gerard kelleher</div>
 </div>
 </body>
