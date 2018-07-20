@@ -11,11 +11,10 @@
   },
   "devDependencies": {},
   "scripts": {
-        "build-js":"browserfy js/hello.js>build/js/script.min.js",
-        "build-css":  "node-sass - include-path scss/main.scss build/css/style.min.css",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "server": "cd build && http-server"
-
+    "build-js": "browserfy js/hello.js>build/js/script.min.js",
+    "build-css": "node-sass - include-path scss/main.scss build/css/style.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd build && http-server"
   },
   "author": "gerard",
   "license": "ISC",
