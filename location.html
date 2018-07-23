@@ -7,12 +7,46 @@
   <title>location</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
+<link rel="stylesheet" href="reset.css"
   <link rel="stylesheet" href="css/.css/style.min.css">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div id="header">
+    <h1> our guesthouse </h1>
+  <nav>
+    <p><a href="/Home/">home  <a href="home.html"> </a></P>
+    <p><a href="/about/">about <a href="about.html"></a></p>
+    <p><a href="/bedrooms/">bedrooms<a href="bedrooms.html"> </a></p>
+    <p><a href="//bookings">bookings<a href="bookings.html"></a></p>
+    <p><a href="/location/">location<a href="location.html"></a></p>
+    <p><a href="/contactus/">contact us <a href="contactus.html"> </a> </p>
+  </nav>
+  <p>Our is truly the ideal base for touring west cork</P>
+    <p> we 81 km for the centre of cork The 237 bus will get you within two minutes of our guest house</p>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <h1> Map </map>
+      <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API -->
+
+<p><button onclick="geoFindMe()">Show my location</button></p>
+<div id="out"></div>
+
+    <script>
+    function myMap() {
+    var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<div id="footer">
+</div>
   <script src="js/scripts.js"></script>
 </body>
 </html>

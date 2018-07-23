@@ -1,5 +1,9 @@
-
+@font-face {
+  font-family: "myFont";
+  src: url("myFont.ttf");
+}
 body {
+  width:100%;
   margin: 10px;
 
     font-family: "Lucida Sans", sans-serif;
