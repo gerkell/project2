@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="rooms.css">
     <link rel="stylesheet"href="style.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
 <div class="wrapper">
@@ -30,12 +31,38 @@
 <main>
   <article>1</article>
 
+
   <img src="pictures/doubleluxury.jpg" border="1">
+  <img srcset="pictures/doubleluxary.jpg,
+    pictures/doubleluxary.jpg,-320w.jpg 320w,
+    pictures/doubleluxary.jpg,.jpg 480w,
+    pictures/doubleluxary.jpg,.jpg 800w'
+    sizes="(max-width: 320px) 280px,
+           (max-width: 480px) 440px,
+           800px"
+           src="single.png 800w single.png" alt="single bed">
 
   <article>2 </article>
-  <img src="pictures/single.png">
+  <img srcset="pictures/single.png
+    pictures/single.png-320w.jpg 320w,
+    pictures/single.png-320w.jpg 480w,
+    pictures/single.png-320w.jpg 800w'
+    sizes="(max-width: 320px) 280px,
+           (max-width: 480px) 440px,
+           800px"
+           src="single.png 800w single.png" alt="single bed">
+
   <article>3</article>
-  <img src="pictures/twin.png">
+  <img srcset="pictures/twin.jpg
+    pictures/twin.jpg-320w.jpg 320w,
+    pictures/twin.jpg-320w.jpg 480w,
+    pictures/twin.jpg-320w.jpg 800w'
+    sizes="(max-width: 320px) 280px,
+           (max-width: 480px) 440px,
+           800px"
+           src="twin.jpg 800w single.png" alt="twin bed">
+
+
 <P> All our rooms are Ensuite and have large flat screen tv</p>
 
   </div>
