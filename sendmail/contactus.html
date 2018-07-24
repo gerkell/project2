@@ -1,19 +1,60 @@
 <html>
 <head>
   <title>form </title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>please submit your details </h1>
 <form action="/my-handling-form-page" method="post">
 <div>
   <label for"home">name </label>
   <input type="text" id="name" name="user_name">
-</div>
-<div>
+
 <label for"mail">email </label>
 <input type="email"" id="mail" name="user_mail">
-</div>
-<div>
+<legend>
 <label for="msg">Message:</label>
 <textarea id="msg" name="user_message"></textarea>
+</legend>
 </div>
+<div>
+  <legend>
+  <h3>please select your preferred room type </h3>
+</legend>
+   <label for "room type">room room type</label>
+   <select name="roomtype">
+     <option value="single">single</option>
+          <option value="double">double</option>
+          <option value="twin">twin </option>
+        </select>
+        <fieldset>
+    <legend>Choose trip dates
+
+    <div>
+        <label for="start">Start</label>
+        <input type="date" id="start" name="stay"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31" />
+    </div>
+
+    <div>
+        <label for="end">End</label>
+        <input type="date" id="end" name="stay"
+               value="2018-07-29"
+               min="2018-01-01" max="2018-12-31"/ >
+               </legend>
+    </div>
+<div>
+  <form>
+    <p><label for"gender>Gender</label></p>
+ <input type="radio" name="gender" value="male" checked> Male<br>
+ <input type="radio" name="gender" value="female"> Female<br>
+</div>
+</form>
+</fieldset>
 <div class="button">
   <button type="submit">Send your message</button>
 </div>
