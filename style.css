@@ -6,11 +6,13 @@ body {
   width:100%;
   margin: 10px;
 
-    font-family: "Lucida Sans", sans-serif;
+    font-family: p{font: 12px/14px sans-serif}
+    p{font: 80% sans-serif}
 }
 
 .sidebar {
 		grid-area: sidebar;
+    p{font: 70% Arial}
 	}
 
 	.content {
@@ -19,6 +21,8 @@ body {
 
 	.header {
 		grid-area: header;
+    font-family: cursive;
+    font-size: 1.2em;
 	}
 .sidebar2{
   grid-area: sidebar2;
@@ -38,7 +42,7 @@ body {
 .footer{
   grid-area: footer;
   clear:both;
-  height:100px;
+  height:50px;
   font-size: 11px;
 background-color: red;
 }

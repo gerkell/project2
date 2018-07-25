@@ -3,8 +3,8 @@
 <head>
 <title>room type</title>
 <meta charset="utf-8"/>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="rooms.css">
+<link rel="stylesheet" href="css\reset.css">
+<link rel="stylesheet" href="room.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <div class="box header">welcome to our guesthouse</div>
   <div class="box sidebar">
     <nav>
-      <p><a href="home.html">home   </a></P>
+      <p><a href="home.html">home</a></P>
       <p><a href="ourservices.html">what we offer  </a></p>
       <p><a href="rooms.html">bedrooms </a></p>
     <p><a href="location.html">location</a></p>
@@ -24,7 +24,7 @@
 
 
 
-<div>
+<div id="container">
   <h3> we have the following room types available</h3>
 </div>
 <P> we offer a wide variety of room types   </p>
@@ -34,23 +34,25 @@
 
 
 <picture>
-  <source srcset="pictures/double.png">
- media="(min-width: 1000px)">
-    <img src="pictures/single.png">
+  <source srcset="pictures/twin.jpg">
+ media="(min-width:1000px)">
+    <img src="pictures/doubleluxury.png" alt="doubleluxury" style="width:auto;">
   </picture>
 
   <h3>2 </h3>
-  <img srcset="pictures/single.png
+  <picture>
+  <source srcset="pictures/doubleuxury.jpg"
     pictures/single.png-320w.jpg 320w,
     pictures/single.png-320w.jpg 480w,
     pictures/single.png-320w.jpg 800w'
     sizes="(max-width: 320px) 280px,
            (max-width: 480px) 440px,
            800px"
-           src="single.png 800w single.png" alt="single bed">
+           src="pictures/doubleuxury.jpg 800w single.png" alt="single bed">
+</picture>
+  <h2>3</h2>
 
-  <article>3</article>
-  <img srcset="pictures/twin.jpg
+  <img srcset="pictures/single.jpg"
     pictures/twin.jpg-320w.jpg 320w,
     pictures/twin.jpg-320w.jpg 480w,
     pictures/twin.jpg-320w.jpg 800w'
@@ -58,13 +60,13 @@
            (max-width: 480px) 440px,
            800px"
            src="twin.jpg 800w single.png" alt="twin bed">
-
-
+<picture>
+ <img src="pictures/twin.jpg" alt="Smiley face" height="420" width="420"> </img></picture>
 <P> All our rooms are Ensuite and have large flat screen tv</p>
 
 </div></main>
  <div class="box sidebar2"> </div>
-   <div class="box footer">images of room type gerard kelleher</div>
+   <div class="box footer"> gerard kelleher</div>
 </div>
 
 

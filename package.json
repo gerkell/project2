@@ -14,14 +14,22 @@
     "uglify-js": "^3.4.5"
   },
   "scripts": {
-    "build-js": "browserfy js/hello.js>build/js/script.min.js",
-    "build-css": "node-sass - include-path scss/main.scss build/css/style.min.css",
-  
-    "server": "cd build && http-server",
-    "start": "nodemon -e js, scss -x\"npm run build && npm run server\" -ignore build/"
+    "build": "npm run build-css && npm run build-js",
+    "build-js": "browserify js/hello.js > build/js/script.min.js",
+    "build-css": "node-sass --include-path scss scss/main.scss build/css/style.min.css",
+    "server": "http-server build",
+    "start": "nodemon -e js, scss -x \"npm run build && npm run server\" --ignore build/"
   },
   "author": "gerard",
   "license": "ISC",
   "description": "website",
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerkell/project2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gerkell/project2/issues"
+  },
+  "homepage": "https://github.com/gerkell/project2#readme"
 }
