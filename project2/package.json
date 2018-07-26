@@ -1,0 +1,34 @@
+{
+  "name": "gerard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "detect-browser": "^3.0.0",
+    "jquery": "^3.3.1",
+    "nodesass": "^0.0.2-security"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.3",
+    "uglify-js": "^3.4.5"
+  },
+  "scripts": {
+    "build-js": "browserfy js/hello.js>build/js/script.min.js",
+    "build-css": "node-sass - include-path scss/main.scss build/css/style.min.css",
+    "server": "cd build && http-server",
+    "start": "nodemon -e js, scss -x\"npm run build && npm run server\" -ignore build/"
+  },
+  "author": "gerard",
+  "license": "ISC",
+  "description": "website",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerkell/project2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gerkell/project2/issues"
+  },
+  "homepage": "https://github.com/gerkell/project2#readme"
+}

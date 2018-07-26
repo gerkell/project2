@@ -3,29 +3,13 @@ body{
   color: red;
   font: normal 100% Cambria, Georgia, serif;
 }
-.picture{
-  float:left;
-  border: 2px solid red;
-
-}
-.picture img{
-  max-width: 100%;
-}
-@media(min-width:300px){
-  .picture{
-    background-position: left;
+.footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
   }
-}
-@media(min-width:540px){
-  .picture{
-    background-position: centre;
-
-  }
-
-
-}
-@media(min-with 800px){
-.picture{
-  background-postion:right;
-}
+.output {
+    background: #eee;
+    position: relative;
 }
