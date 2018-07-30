@@ -2,12 +2,12 @@
   font-family: "myFont";
   src: url("myFont.ttf");
 }
-body {
+#body {
   width:100%;
   margin: 10px;
 
     font-family: p{font: 12px/14px sans-serif}
-    p{font: 80% sans-serif}
+    .p{font: 80% sans-serif}
 }
 
 .sidebar {
@@ -91,7 +91,7 @@ text-align: center;
   text-decoration: overline;
   text-decoration-color: red;
 }
-.boxfooter{
+.footer{
   float: right;
 }
 * {box-sizing: border-box;}

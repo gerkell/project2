@@ -6,13 +6,38 @@
 @import 'main';
 @import 'sidebar2';
 @import 'footer';
-@import 'style'
+@include 'style'
+.container {width 100%;}
+display:flex
+flex-wrap:wrap;
+article[role="main"]{
+  float:left;
+  width 690px/960px *100;
+  @include font-size: 16
+}
+sidebar1 [role="complementary"]{
+  float:left;
+  width:150px /960px *100%;
+  @include font-size: 12
 
+}
+sidebar2 [role="complementary"]{
+  float:right;
+  width:150px /960px *100%;
+  @include font-size: 12
+}
+footer [role="complimentary"]{
+  width: 960px /960px *100%;
+  rgba($black,.125)
+}
 @mixin transform ($box){
   -webkit-transform: $box;
   -ms- transform: $box;
   transform: perspective();
 }
+@mixin display:grid-row;
+}
+-ms-inline-flexbox:active;
 .box { @include transform(rotate360);}
 .box{
   -webkit-transform: rotate(360deg);
@@ -31,9 +56,10 @@ margin
 
 }
 h1{
-  color: colour2;
+  color: $colour2;
   background-color: inherit;
 }
+
 font-face {
   font-family: "myFont";
   src: url("myFont.ttf");
