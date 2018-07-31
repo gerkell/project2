@@ -2,15 +2,16 @@
 <head>
   <title>enquiry </title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="scss/vendor/_reset.scss">
+  <link rel="stylesheet" href="/..scss/vendor/_reset.scss">
     <link rel="stylesheet" href="./css/style/min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scss/vendor/_bootstrap.scss">
+    <link rel="stylesheet" href="..\scss\vendor\_bootstrap.scss">
     <link rel="stylesheet" href="scss/_heading.scss">
 </head>
 <body>
   <header>
     <h1>booking request  </h1>
+  </header>
 <form action="/my-handling-form-page" method="post">
 <div>
   <label for"home">name </label>
@@ -56,9 +57,20 @@
  <input type="radio" name="gender" value="male" checked> Male<br>
  <input type="radio" name="gender" value="female"> Female<br>
 </div>
+<form action="mailto:tomvdaly@hotmail.com" method="GET">
 </form>
 </fieldset>
 <div class="button">
   <button type="submit">Send your message</button>
+
+
+
+
+
+    <input name="subject" type="text" />
+    <textarea name="body"></textarea>
+    <input type="submit" value="Send" />
+    
+</form>
 </div>
 </form>

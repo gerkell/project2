@@ -1,3 +1,12 @@
 $colour1:red;
 $colour2:lightgreen;
 $margin1:10%;
+
+@mixin transform ($property){
+transform $property;
+)
+.box (include transform(rotate));}
+header[role="main"]
+float:left;
+width 960px;/960px *100%;
+}

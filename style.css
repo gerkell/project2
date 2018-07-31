@@ -1,22 +1,29 @@
-@font-face {
-  font-family: "myFont";
-  src: url("myFont.ttf");
-}
-#body {
-  width:100%;
-  margin: 10px;
+body, html {
+    height: 100%;
+  }
 
-    font-family: p{font: 12px/14px sans-serif}
-    .p{font: 80% sans-serif}
-}
 
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-areas:
+             "header header  header header"
+             "sidebar content content sidebar2 "
+              "footer footer footer footer";
+            }
+            @font-face {
+              font-family: "myFont";
+              src: url("myFont.ttf");
+            }
 .sidebar {
 		grid-area: sidebar;
     p{font: 70% Arial}
 	}
 
-	.content {
-		grid-area: content;
+	.wrapper {
+
     font-variant: normal;
     font-kerning: normal;
     text-transform: lowercase;
@@ -54,14 +61,7 @@
 background-color: red;
 }
 
-	.wrapper {
-		display: grid;
-    grid-gap: 10px;
-		grid-template-columns: 10% 40% 40% 10%;
-		grid-template-areas:
-               "header header  header header"
-							 "sidebar content content sidebar2 "
-                "footer footer footer footer";
+
 
 
 	}
@@ -135,4 +135,5 @@ border solid:red; 5px;
 padding 0;
 @-ms-viewport{
   width: device-width;
+}
 }

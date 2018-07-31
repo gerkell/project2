@@ -1,7 +1,7 @@
       //  Vendor
 @import  ‘vendor/_reset’;
 @import  ‘vendor/_botstrap’;//Project ;
-@import  ‘headings’;
+@import  ‘vendor/_headings’;
 @import 'nav';
 @import 'main';
 @import 'sidebar2';
@@ -10,20 +10,22 @@
 .container {width 100%;}
 display:flex
 flex-wrap:wrap;
-article[role="main"]{
+}
+article[role="content"]{
   float:left;
-  width 690px/960px *100;
+  width:660px/960px *100%;
   @include font-size: 16
 }
 sidebar1 [role="complementary"]{
   float:left;
-  width:150px /960px *100%;
+  width:150px /960px*100%;
   @include font-size: 12
-
+  width:460px /960px *100%;
 }
+
 sidebar2 [role="complementary"]{
   float:right;
-  width:150px /960px *100%;
+  width:150px /960px*100%;
   @include font-size: 12
 }
 footer [role="complimentary"]{
@@ -108,7 +110,7 @@ background-color: red;
 	.wrapper {
 		display: grid;
     grid-gap: 10px;
-		grid-template-columns: 10% 40% 40% 10%;
+		grid-template-columns: 15% 70% 15%;
 		grid-template-areas:
                "header header  header header"
 							 "sidebar content content sidebar2 "
@@ -142,7 +144,7 @@ text-align: center;
   text-decoration: overline;
   text-decoration-color: red;
 }
-.boxfooter{
+.footer{
   float: right;
 }
 * {box-sizing: border-box;}

@@ -17,7 +17,7 @@
     "build": "npm run build-css && npm run build-js",
     "build-js": "browserify js/hello.js > build/js/script.min.js",
     "build-css": "node-sass --include-path scss scss/main.scss build/css/style.min.css",
-    "server": "http-server build",
+    "server": "cd build && http-server",
     "start": "nodemon -e js, scss -x \"npm run build && npm run server\" --ignore build/"
   },
   "author": "gerard",
