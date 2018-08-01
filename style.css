@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    max-width: 100%;
   }
 
 
@@ -91,8 +92,9 @@ text-align: center;
   text-decoration: overline;
   text-decoration-color: red;
 }
-.footer{
+footer{
   float: right;
+  clear:both;
 }
 * {box-sizing: border-box;}
 .wrapper {
@@ -106,7 +108,7 @@ text-align: center;
   background-color: rgba(233,171,88,.5);
   padding: 1em;
   color: #d9480f;
-}.wrapper {
+}wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;

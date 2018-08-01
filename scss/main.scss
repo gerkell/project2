@@ -2,28 +2,24 @@
 @import  ‘vendor/_reset’;
 @import  ‘vendor/_botstrap’;//Project ;
 @import  ‘vendor/_headings’;
-@import 'nav';
-@import 'main';
-@import 'sidebar2';
-@import 'footer';
-@include 'style'
+
 .container {width 100%;}
 display:flex
 flex-wrap:wrap;
 }
-article[role="content"]{
+.article[role="content"]{
   float:left;
   width:660px/960px *100%;
-  @include font-size: 16
+  @include font-size: 14
 }
-sidebar1 [role="complementary"]{
+.sidebar1 [role="complementary"]{
   float:left;
   width:150px /960px*100%;
   @include font-size: 12
   width:460px /960px *100%;
 }
 
-sidebar2 [role="complementary"]{
+.sidebar2 [role="complementary"]{
   float:right;
   width:150px /960px*100%;
   @include font-size: 12
@@ -188,4 +184,12 @@ border solid:red; 5px;
 padding 0;
 @-ms-viewport{
   width: device-width;
+}
+$breakpoint 300px;
+@media only screen  and (max-width $ breakpoint){
+  .oneclass{font-size: 10px;}
+}
+breakpoint 480px;
+@media only screen and (max-width: $ breakpoint){
+  .someclass {font-size:12px}
 }
