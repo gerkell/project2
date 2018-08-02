@@ -1,4 +1,4 @@
- function cat(data) {                           // Callback when JSON loads
+function cat(data) {                           // Callback when JSON loads
   var newContent = '';                                // Variable to hold HTML
 
     // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
@@ -13,4 +13,3 @@
 
     // Update the page with the new content
     document.getElementById('content').innerHTML = newContent;
-}
