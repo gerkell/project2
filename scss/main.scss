@@ -28,8 +28,8 @@ flex-wrap:wrap;
   width:150px /960px*100%;
 font-size: 12px;
 }
-footer [role="complimentary"]{
-  width: 960px /960px *100%;
+footer[role="complimentary"]{
+  width: 960px/960px *100%;
   background-color: rgba($colour2,.125);
 }
 @mixin transform ($box){
