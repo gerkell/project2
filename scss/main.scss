@@ -1,41 +1,45 @@
       //  Vendor
-@import  ‘vendor/_reset’;
-@import  ‘vendor/_botstrap’;//Project ;
-@import  ‘vendor/_headings’;
+@import  'vendor/_reset';
+@import  'vendor/_bootstrap';
+@import  'vendor/_headings';
 
-.container {width 100%;}
-display:flex
+$colour1:cream;
+$colour2:yellow;
+$margin1:10%;
+
+.container {width:100%;
+display:flex;
 flex-wrap:wrap;
 }
 .article[role="content"]{
   float:left;
   width:660px/960px *100%;
-  @include font-size: 14
+  font-size: 14
 }
 .sidebar1 [role="complementary"]{
   float:left;
   width:150px /960px*100%;
-  @include font-size: 12
+  font-size: 12;
   width:460px /960px *100%;
 }
 
 .sidebar2 [role="complementary"]{
   float:right;
   width:150px /960px*100%;
-  @include font-size: 12
+font-size: 12px;
 }
 footer [role="complimentary"]{
   width: 960px /960px *100%;
-  rgba($black,.125)
+  background-color: rgba($colour2,.125);
 }
 @mixin transform ($box){
   -webkit-transform: $box;
-  -ms- transform: $box;
+  -ms-transform: $box;
   transform: perspective();
 }
-@mixin display:grid-row;
-}
--ms-inline-flexbox:active;
+
+
+// -ms-inline-flexbox:active;
 .box { @include transform(rotate360);}
 .box{
   -webkit-transform: rotate(360deg);
@@ -43,16 +47,13 @@ footer [role="complimentary"]{
   transform: rotate(360deg) ;
 
 }
-$colour1:cream;
-$colour2:yellow;
-$margin1:10%;
+
 
 p{
 color:$colour1;
 background-color:$colour2;
-margin
-
 }
+
 h1{
   color: $colour2;
   background-color: inherit;
@@ -173,23 +174,23 @@ text-align: center;
   grid-column: 3/3;
   grid-row:  1/ 5;
 }
-.box-sizing: border-box;
-width: 100%;
-border: solid #5B6DCD 10px;
-padding: 5px;
-}
-.boxsizing.content-box;
-width: 100%;
-border solid:red; 5px;
-padding 0;
+// box-sizing: border-box;
+// width: 100%;
+// border: solid #5B6DCD 10px;
+// padding: 5px;
+// }
+// .boxsizing.content-box;
+// width: 100%;
+// border solid:red; 5px;
+// padding 0;
 @-ms-viewport{
   width: device-width;
 }
-$breakpoint 300px;
-@media only screen  and (max-width $ breakpoint){
+$breakpoint:300px;
+@media only screen  and (max-width :$breakpoint){
   .oneclass{font-size: 10px;}
 }
-breakpoint 480px;
-@media only screen and (max-width: $ breakpoint){
+$breakpoint2:480px;
+@media only screen and (max-width: $breakpoint2){
   .someclass {font-size:12px}
 }

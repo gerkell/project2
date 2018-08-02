@@ -92,7 +92,7 @@ text-align: center;
   text-decoration: overline;
   text-decoration-color: red;
 }
-footer{
+.footer{
   float: right;
   clear:both;
 }
